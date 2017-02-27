@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>XperiAndri.Interactivity.Orientation</name>
+    </assembly>
+    <members>
+        <member name="T:XperiAndri.Interactivity.OrientationToStateAction">
+            <summary>
+            An action that will transition a FrameworkElement to a specified VisualStates depending on
+            devicу orientation.
+            </summary>
+            <remarks>
+            If the TargetName property is set, this action will attempt to change the state of the targeted element. 
+            If not, it walks the element tree in an attempt to locate an alternative target that defines states.
+            ControlTemplate and UserControl are two common possibilities.
+            </remarks>
+        </member>
+        <member name="P:XperiAndri.Interactivity.OrientationToStateAction.UseTransitions">
+            <summary>
+            Determines whether or not to use a VisualTransition to transition between states.
+            </summary>
+        </member>
+        <member name="P:XperiAndri.Interactivity.OrientationToStateAction.PortraitUpStateName">
+            <summary>
+            The name of the portrait up VisualState.
+            </summary>
+        </member>
+        <member name="P:XperiAndri.Interactivity.OrientationToStateAction.PortraitDownStateName">
+            <summary>
+            The name of the portrait down VisualState.
+            </summary>
+        </member>
+        <member name="P:XperiAndri.Interactivity.OrientationToStateAction.LandscapeLeftStateName">
+            <summary>
+            The name of the landscape left VisualState.
+            </summary>
+        </member>
+        <member name="P:XperiAndri.Interactivity.OrientationToStateAction.LandscapeRightStateName">
+            <summary>
+            The name of the landscape right VisualState.
+            </summary>
+        </member>
+        <member name="T:XperiAndri.Interactivity.OrientationTrigger">
+            <summary>
+            Represents a trigger that performs actions when orientaion of the device have changed. 
+            </summary>
+        </member>
+    </members>
+</doc>

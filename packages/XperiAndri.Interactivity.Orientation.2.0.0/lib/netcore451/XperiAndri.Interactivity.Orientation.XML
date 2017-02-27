@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>XperiAndri.Interactivity.Orientation</name>
+    </assembly>
+    <members>
+        <member name="T:XperiAndri.Interactivity.OrientationToStateAction">
+            <summary>
+            An action that will transition a Control to a specified VisualStates depending on
+            current device orientation.
+            </summary>
+            <remarks>
+            If the TargetName property is set, this action will attempt to change the state of the targeted element.
+            If not, it walks the element tree in an attempt to locate an alternative target that defines states.
+            ControlTemplate and UserControl are two common possibilities.
+            </remarks>
+        </member>
+        <member name="F:XperiAndri.Interactivity.OrientationToStateAction.TargetObjectProperty">
+            <summary>
+            Identifies the
+            <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.TargetObject" />
+            dependency property.
+            </summary>
+            <value>
+            The identifier for the
+            <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.TargetObject" />
+            dependency property.
+            </value>
+        </member>
+        <member name="F:XperiAndri.Interactivity.OrientationToStateAction.LandscapeStateNameProperty">
+            <summary>
+            Identifies the
+            <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.LandscapeStateName" />
+            dependency property.
+            </summary>
+            <value>
+            The identifier for the
+            <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.LandscapeStateName" />
+            dependency property.
+            </value>
+        </member>
+        <member name="F:XperiAndri.Interactivity.OrientationToStateAction.PortraitStateNameProperty">
+            <summary>
+            Identifies the
+            <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.PortraitStateName" />
+            dependency property.
+            </summary>
+            <value>
+            The identifier for the
+            <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.PortraitStateName" />
+            dependency property.
+            </value>
+        </member>
+        <member name="F:XperiAndri.Interactivity.OrientationToStateAction.LandscapeFlippedStateNameProperty">
+            <summary>
+            Identifies the
+            <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.LandscapeFlippedStateName" />
+            dependency property.
+            </summary>
+            <value>
+            The identifier for the
+            <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.LandscapeFlippedStateName" />
+            dependency property.
+            </value>
+        </member>
+        <member name="F:XperiAndri.Interactivity.OrientationToStateAction.PortraitFlippedStateNameProperty">
+            <summary>
+            Identifies the
+            <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.PortraitFlippedStateName" />
+            dependency property.
+            </summary>
+            <value>
+            The identifier for the
+            <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.PortraitFlippedStateName" />
+            dependency property.
+            </value>
+        </member>
+        <member name="M:XperiAndri.Interactivity.OrientationToStateAction.Execute(System.Object,System.Object)">
+            <summary>
+            Transitions the control to a specified state depending on display orientation.
+            </summary>
+            <param name="sender">
+            <see cref="T:Windows.UI.Xaml.DependencyObject"/> to which trigger is attached.
+            </param>
+            <param name="parameter">
+            New device display orientation of type 
+            <see cref="T:Windows.Graphics.Display.DisplayOrientations"/>.
+            </param>
+            <returns>
+            True if the action is successfully executed and control is transitioned to the new state 
+            depending on orientation; otherwise, false.
+            </returns>
+        </member>
+        <member name="P:XperiAndri.Interactivity.OrientationToStateAction.TargetObject">
+            <summary>
+            Gets or sets the target object for the action.
+            </summary>
+            <value>
+            The target object of the action. Default value is null.
+            </value>
+        </member>
+        <member name="P:XperiAndri.Interactivity.OrientationToStateAction.LandscapeStateName">
+            <summary>
+            Gets or sets the name of the landscape VisualState.
+            </summary>
+            <value>
+            The name of the landscape VisualState.
+            </value>
+        </member>
+        <member name="P:XperiAndri.Interactivity.OrientationToStateAction.PortraitStateName">
+            <summary>
+            Gets or sets the name of the portrait VisualState.
+            </summary>
+            <value>
+            The name of the portrait VisualState.
+            </value>
+        </member>
+        <member name="P:XperiAndri.Interactivity.OrientationToStateAction.LandscapeFlippedStateName">
+            <summary>
+            Gets or sets the name of the flipped landscape VisualState.
+            </summary>
+            <value>
+            The name of the flipped landscape VisualState.
+            </value>
+        </member>
+        <member name="P:XperiAndri.Interactivity.OrientationToStateAction.PortraitFlippedStateName">
+            <summary>
+            Gets or sets the name of the flipped portrait VisualState.
+            </summary>
+            <value>
+            The name of the flipped portrait VisualState.
+            </value>
+        </member>
+        <member name="T:XperiAndri.Interactivity.OrientationTriggerBehavior">
+            <summary>
+            Represents a trigger behavior that performs actions when orientation of the device changes.
+            </summary>
+        </member>
+        <member name="F:XperiAndri.Interactivity.OrientationTriggerBehavior.ActionsProperty">
+            <summary>
+            Identifies the
+            <see cref="P:Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions"/>
+            dependency property.
+            </summary>
+        </member>
+        <member name="M:XperiAndri.Interactivity.OrientationTriggerBehavior.Attach(Windows.UI.Xaml.DependencyObject)">
+            <summary>
+            Attaches to the specified object.
+            </summary>
+            <param name="associatedObject">
+            <see cref="T:Windows.UI.Xaml.DependencyObject"/> to which
+            <see cref="T:Microsoft.Xaml.Interactivity.IBehavior"/> will be attached.
+            </param>
+        </member>
+        <member name="M:XperiAndri.Interactivity.OrientationTriggerBehavior.Detach">
+            <summary>
+            Detaches this instance from its associated object.
+            </summary>
+        </member>
+        <member name="P:XperiAndri.Interactivity.OrientationTriggerBehavior.Actions">
+            <summary>
+            Gets the collection of actions associated with the behavior. This is a dependency
+            property.
+            </summary>
+            <value>
+            The collection of actions associated with the behavior.
+            </value>
+        </member>
+        <member name="P:XperiAndri.Interactivity.OrientationTriggerBehavior.AssociatedObject">
+            <summary>
+            Gets the <see cref="T:Windows.UI.Xaml.DependencyObject"/> to which
+            the <see cref="T:Microsoft.Xaml.Interactivity.IBehavior"/> is attached.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JULIOCÉSARLUNA</Machine>
+    <WindowsUser>JulioCésar</WindowsUser>
+    <TargetPlatformIdentifier>Windows Phone</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>107d6c9e-c4a7-4ada-9f32-c474993baff6</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Bin\Debug\EnvirAlert.dll">
+      <PackagePath>EnvirAlert.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\Microsoft.Expression.Interactions.dll">
+      <PackagePath>Microsoft.Expression.Interactions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll">
+      <PackagePath>Microsoft.Phone.Controls.Toolkit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\System.Windows.Interactivity.dll">
+      <PackagePath>System.Windows.Interactivity.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\XperiAndri.Interactivity.Orientation.2.0.0\lib\wp8\XperiAndri.Interactivity.Orientation.dll">
+      <PackagePath>XperiAndri.Interactivity.Orientation.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\de\Microsoft.Expression.Interactions.resources.dll">
+      <PackagePath>de\Microsoft.Expression.Interactions.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\en\Microsoft.Expression.Interactions.resources.dll">
+      <PackagePath>en\Microsoft.Expression.Interactions.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\es\Microsoft.Expression.Interactions.resources.dll">
+      <PackagePath>es\Microsoft.Expression.Interactions.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\fr\Microsoft.Expression.Interactions.resources.dll">
+      <PackagePath>fr\Microsoft.Expression.Interactions.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\it\Microsoft.Expression.Interactions.resources.dll">
+      <PackagePath>it\Microsoft.Expression.Interactions.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\ja\Microsoft.Expression.Interactions.resources.dll">
+      <PackagePath>ja\Microsoft.Expression.Interactions.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\ko\Microsoft.Expression.Interactions.resources.dll">
+      <PackagePath>ko\Microsoft.Expression.Interactions.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\ru\Microsoft.Expression.Interactions.resources.dll">
+      <PackagePath>ru\Microsoft.Expression.Interactions.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\zh-Hans\Microsoft.Expression.Interactions.resources.dll">
+      <PackagePath>zh-Hans\Microsoft.Expression.Interactions.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\zh-Hant\Microsoft.Expression.Interactions.resources.dll">
+      <PackagePath>zh-Hant\Microsoft.Expression.Interactions.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>bg-BG\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ca-ES\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>es-MX\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>et-EE\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fa-IR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fil-PH\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fr-CA\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>he-IL\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>hi-IN\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>hr-HR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>kk-KZ\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>lt-LT\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>lv-LV\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>mk-MK\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>pt-PT\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ro-RO\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>sk-SK\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>sl-SI\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>sq-AL\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\sr-Latn-CS\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>sr-Latn-CS\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>th-TH\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>tr-TR\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>uk-UA\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>uz-Latn-UZ\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\WPtoolkit.4.2013.08.16\lib\wp8\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll">
+      <PackagePath>zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\de\System.Windows.Interactivity.resources.dll">
+      <PackagePath>de\System.Windows.Interactivity.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\en\System.Windows.Interactivity.resources.dll">
+      <PackagePath>en\System.Windows.Interactivity.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\es\System.Windows.Interactivity.resources.dll">
+      <PackagePath>es\System.Windows.Interactivity.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\fr\System.Windows.Interactivity.resources.dll">
+      <PackagePath>fr\System.Windows.Interactivity.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\it\System.Windows.Interactivity.resources.dll">
+      <PackagePath>it\System.Windows.Interactivity.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\ja\System.Windows.Interactivity.resources.dll">
+      <PackagePath>ja\System.Windows.Interactivity.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\ko\System.Windows.Interactivity.resources.dll">
+      <PackagePath>ko\System.Windows.Interactivity.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\ru\System.Windows.Interactivity.resources.dll">
+      <PackagePath>ru\System.Windows.Interactivity.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\zh-Hans\System.Windows.Interactivity.resources.dll">
+      <PackagePath>zh-Hans\System.Windows.Interactivity.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\Unofficial.Blend.Interactivity.1.0.0\lib\wp8\zh-Hant\System.Windows.Interactivity.resources.dll">
+      <PackagePath>zh-Hant\System.Windows.Interactivity.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\packages\XperiAndri.Interactivity.Orientation.2.0.0\lib\wp8\XperiAndri.Interactivity.Orientation.xml">
+      <PackagePath>XperiAndri.Interactivity.Orientation.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Images\appLogoV.png">
+      <PackagePath>Images\appLogoV.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Images\conInternet.png">
+      <PackagePath>Images\conInternet.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Images\imagUbi.png">
+      <PackagePath>Images\imagUbi.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Images\imagUbi2.png">
+      <PackagePath>Images\imagUbi2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Images\maps.png">
+      <PackagePath>Images\maps.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Images\sinInternet.png">
+      <PackagePath>Images\sinInternet.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Assets\AlignmentGrid.png">
+      <PackagePath>Assets\AlignmentGrid.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Assets\ApplicationIcon.png">
+      <PackagePath>Assets\ApplicationIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Assets\BadgeLogo.png">
+      <PackagePath>Assets\BadgeLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Assets\SquareTile150x150.png">
+      <PackagePath>Assets\SquareTile150x150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Assets\SquareTile71x71.png">
+      <PackagePath>Assets\SquareTile71x71.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Assets\WideLogo.png">
+      <PackagePath>Assets\WideLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Assets\Tiles\FlipCycleTileLarge.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileLarge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Assets\Tiles\FlipCycleTileMedium.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileMedium.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Assets\Tiles\FlipCycleTileSmall.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Assets\Tiles\IconicTileMediumLarge.png">
+      <PackagePath>Assets\Tiles\IconicTileMediumLarge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Assets\Tiles\IconicTileSmall.png">
+      <PackagePath>Assets\Tiles\IconicTileSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Images\appLogo.png">
+      <PackagePath>Images\appLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Images\InfoSensor.png">
+      <PackagePath>Images\InfoSensor.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Toolkit.Content\ApplicationBar.Add.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Add.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Toolkit.Content\ApplicationBar.Cancel.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Cancel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Toolkit.Content\ApplicationBar.Check.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Check.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Toolkit.Content\ApplicationBar.Delete.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Delete.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Toolkit.Content\ApplicationBar.Select.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Select.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Media\Alerta1.mp3">
+      <PackagePath>Media\Alerta1.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\ServiceReferences.ClientConfig">
+      <PackagePath>ServiceReferences.ClientConfig</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\README_FIRST.txt">
+      <PackagePath>README_FIRST.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\EnvirAlert_Version_3.11-Revision-Prebeta\EnvirAlert\Bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

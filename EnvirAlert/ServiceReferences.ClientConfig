@@ -1,0 +1,18 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="WSSemanticSearchSoap" closeTimeout="01:59:00"
+                receiveTimeout="01:59:00" sendTimeout="01:59:00" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://semanticsearchiot.net/sswot/WSSemanticsearch/WSSemanticsearch.asmx"
+                binding="basicHttpBinding" bindingConfiguration="WSSemanticSearchSoap"
+                contract="WSIOT.WSSemanticSearchSoap" name="WSSemanticSearchSoap" />
+        </client>
+    </system.serviceModel>
+</configuration>

@@ -1,0 +1,97 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="EnvirAlert.Views.PagTipoBusqueda"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot es la cuadrícula raíz donde se coloca todo el contenido de la página-->
+    <Grid x:Name="LayoutRoot" Background="Black">
+        <!--ContentPanel. Colocar aquí el contenido adicional-->
+  
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel>
+                <TextBlock Text="Buscar Dispositivo por:"
+                           Foreground="White"/>
+
+                <RadioButton x:Name="rbtnUbicacion"
+                             Content="Ubicación"
+                             Checked="rbtnUbicacion_Checked"
+                             Foreground="White"
+                             Background="#008080"
+                             />
+
+                <RadioButton x:Name="rbtnFeedID"                             
+                             Checked="rbtnFeedID_Checked"
+                             Content="FeedID"
+                             Foreground="White"
+                             Background="#008080"/>
+
+                <StackPanel x:Name="panelPorUbicacion"
+                            Visibility="Collapsed"
+                            Height="250">
+                    <Grid x:Name="ContentPanel1" Grid.Row="1">
+                        <toolkit:ListPicker x:Name="LP" Header="Dispositivo" FullModeHeader="Dispositivo" CacheMode="BitmapCache" Margin="12,45,25,-71">
+                            <toolkit:ListPicker.FullModeItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" Margin="16 21 0 20">
+                                        <Rectangle Fill="{Binding}" Width="43" Height="43" />
+                                        <TextBlock Text="{Binding}" Margin="16 0 0 0" FontSize="35" FontFamily="{StaticResource PhoneFontFamilyLight}" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </toolkit:ListPicker.FullModeItemTemplate>
+                        </toolkit:ListPicker>
+                        <TextBlock x:Name="txtEspera" Text="Espere..." FontSize="25" Margin="16 21 0 20"/>
+                    </Grid>
+                    
+                    
+                </StackPanel>
+
+                <StackPanel x:Name="panelPorFeedID"
+                            Visibility="Collapsed"
+                            Margin="40,0,30,0"
+                            Height="250">
+
+                    <Grid x:Name="ContentPanel2" Grid.Row="1">
+                        <toolkit:ListPicker x:Name="LP_FeedID" Header="FeedIDs de Dispositivos" FullModeHeader="FeedIDs de Dispositivos" CacheMode="BitmapCache" Margin="12,45,25,-71">
+                            <toolkit:ListPicker.FullModeItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" Margin="16 21 0 20">
+                                        <Rectangle Fill="{Binding}" Width="43" Height="43" />
+                                        <TextBlock Text="{Binding}" Margin="16 0 0 0" FontSize="35" FontFamily="{StaticResource PhoneFontFamilyLight}" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </toolkit:ListPicker.FullModeItemTemplate>
+                        </toolkit:ListPicker>
+                        <TextBlock x:Name="txtEsperaFeed" Text="Espere..." FontSize="25" Margin="16 21 0 20"/>
+                    </Grid>
+                </StackPanel>
+               
+                
+                       
+                    
+                <Button x:Name="btnBuscar" 
+                    	Content="Buscar Dispositivo"
+                    	Visibility="Collapsed"
+                    	Background="#008080"
+                    	BorderBrush="White"
+                    	Margin="0,100,0,0" Click="btnBuscar_Click"                        
+                        />
+
+            </StackPanel>
+
+        </Grid>
+        <Image Name="imgEstadoConexion" Width="40" Height="40" Margin="430,0,10,728" Source="Images/conInternet.png" />
+
+    </Grid>
+
+</phone:PhoneApplicationPage>

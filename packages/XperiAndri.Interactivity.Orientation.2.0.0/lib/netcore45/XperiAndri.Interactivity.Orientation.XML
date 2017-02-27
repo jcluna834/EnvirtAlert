@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>XperiAndri.Interactivity.Orientation</name>
+    </assembly>
+    <members>
+        <member name="T:XperiAndri.Interactivity.OrientationToStateAction">
+            <summary>
+            An action that will transition a FrameworkElement to a specified VisualStates depending on current
+            application view state.
+            </summary>
+            <remarks>
+            If the TargetName property is set, this action will attempt to change the state of the targeted element. 
+            If not, it walks the element tree in an attempt to locate an alternative target that defines states.
+            ControlTemplate and UserControl are two common possibilities.
+            </remarks>
+        </member>
+        <member name="F:XperiAndri.Interactivity.OrientationToStateAction.FullScreenLandscapeStateNameProperty">
+            <summary>
+            Identifies the
+            <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.FullScreenLandscapeStateName" />
+            dependency property.
+            </summary>
+            <value>
+            The identifier for the
+            <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.FullScreenLandscapeStateName" />
+            dependency property.
+            </value>
+        </member>
+        <member name="F:XperiAndri.Interactivity.OrientationToStateAction.FullScreenPortraitStateNameProperty">
+            <summary>
+            Identifies the
+            <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.FullScreenPortraitStateName" />
+            dependency property.
+            </summary>
+            <value>
+            The identifier for the
+            <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.FullScreenPortraitStateName" />
+            dependency property.
+            </value>
+        </member>
+        <member name="F:XperiAndri.Interactivity.OrientationToStateAction.FilledStateNameProperty">
+            <summary>
+            Identifies the
+            <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.FilledStateName" />
+            dependency property.
+            </summary>
+            <value>
+            The identifier for the
+            <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.FilledStateName" />
+            dependency property.
+            </value>
+        </member>
+        <member name="F:XperiAndri.Interactivity.OrientationToStateAction.SnappedStateNameProperty">
+            <summary>
+            Identifies the
+            <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.SnappedStateName" />
+            dependency property.
+            </summary>
+            <value>
+            The identifier for the
+            <see cref="P:XperiAndri.Interactivity.OrientationToStateAction.SnappedStateName" />
+            dependency property.
+            </value>
+        </member>
+        <member name="M:XperiAndri.Interactivity.OrientationToStateAction.Invoke(System.Object)">
+            <summary>
+            Invokes the action.
+            </summary>
+            <param name="parameter">
+            New application view state of type 
+            <see cref="T:Windows.UI.ViewManagement.ApplicationViewState"/>.
+            </param>
+        </member>
+        <member name="M:XperiAndri.Interactivity.OrientationToStateAction.OnTargetChanged(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.FrameworkElement)">
+            <summary>
+            Called when the target property changes.
+            </summary>
+            <param name="oldTarget">The old target.</param>
+            <param name="newTarget">The new target.</param>
+        </member>
+        <member name="P:XperiAndri.Interactivity.OrientationToStateAction.FullScreenLandscapeStateName">
+            <summary>
+            Gets or sets the name of the full screen landscape VisualState.
+            </summary>
+            <value>
+            The name of the full screen landscape VisualState.
+            </value>
+        </member>
+        <member name="P:XperiAndri.Interactivity.OrientationToStateAction.FullScreenPortraitStateName">
+            <summary>
+            Gets or sets the name of the full screen portrait VisualState.
+            </summary>
+            <value>
+            The name of the full screen portrait VisualState.
+            </value>
+        </member>
+        <member name="P:XperiAndri.Interactivity.OrientationToStateAction.FilledStateName">
+            <summary>
+            Gets or sets the name of the filled VisualState.
+            </summary>
+            <value>
+            The name of the filled VisualState.
+            </value>
+        </member>
+        <member name="P:XperiAndri.Interactivity.OrientationToStateAction.SnappedStateName">
+            <summary>
+            Gets or sets the name of the snapped VisualState.
+            </summary>
+            <value>
+            The name of the snapped VisualState.
+            </value>
+        </member>
+        <member name="T:XperiAndri.Interactivity.OrientationTrigger">
+            <summary>
+            Represents a trigger that performs actions when orientation of the device changes. 
+            </summary>
+        </member>
+    </members>
+</doc>

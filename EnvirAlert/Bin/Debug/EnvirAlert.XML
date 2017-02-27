@@ -1,0 +1,837 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EnvirAlert</name>
+    </assembly>
+    <members>
+        <member name="M:EnvirAlert.App.#ctor">
+            <summary>
+            Constructor para el objeto Application.
+            </summary>
+        </member>
+        <member name="M:EnvirAlert.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:EnvirAlert.App.RootFrame">
+            <summary>
+            Proporcionar acceso sencillo al marco raíz de la aplicación telefónica.
+            </summary>
+            <returns>Marco raíz de la aplicación telefónica.</returns>
+        </member>
+        <member name="T:EnvirAlert.LocalizedStrings">
+            <summary>
+            Proporciona acceso a los recursos de cadena.
+            </summary>
+        </member>
+        <member name="T:EnvirAlert.MainPage">
+            <summary>
+            Código de vista inicial y principal MainPage   
+            </summary>
+        </member>
+        <member name="F:EnvirAlert.MainPage.la">
+            Variables de uso para  Coordenadas
+        </member>
+        <member name="F:EnvirAlert.MainPage.feedCapturado">
+            Variables de uso para feeds
+        </member>
+        <member name="F:EnvirAlert.MainPage.miAlerta">
+            Variables de uso para Alertas
+        </member>
+        <member name="F:EnvirAlert.MainPage.tSegundosAntes">
+            De configuracion
+        </member>
+        <member name="F:EnvirAlert.MainPage.paramConsulta">
+            Rango para determinar si hay otros dispositivos que puedan generar alertas
+        </member>
+        <member name="F:EnvirAlert.MainPage.tSegundosHayInternet">
+            Consulta que se enviara por parametro al servicio web
+        </member>
+        <member name="F:EnvirAlert.MainPage.mensajeYaSeMostro">
+            Auxiliares
+        </member>
+        <member name="M:EnvirAlert.MainPage.#ctor">
+            <summary>
+            Constructor, en el cual se inicializan los componentes y se obtiene las coordenadas
+            del dispositivo en ese momento, y se consulta a el indice semantico para obtener
+            información de los dispositivos mas cercanos.
+            </summary>
+        </member>
+        <member name="M:EnvirAlert.MainPage.Coordenadas">
+            <summary>   
+            Método Asincrono en el cual se obtiene las coordenadas del GPS
+            del dispositivo, y se almacenan en las variables miembros
+            la (latitud) y lo (longitud)
+            </summary>
+        </member>
+        <member name="M:EnvirAlert.MainPage.ObetenerFeedXively">
+            <summary>
+            Permite la obtención y actualización de los FeedXively, con el proposito
+            de mostrar la alerta, si es que la opción que permite mostrar alertas esta
+            habilitada.
+            </summary>
+        </member>
+        <member name="M:EnvirAlert.MainPage.ConexionInternet_TimerTick(System.Object,System.EventArgs)">
+            <summary>   Event handler. Called by ConexionInternet for timer tick events. </summary>
+            <param name="sender">   Objeto enviante. </param>
+            <param name="e">        Informacion del evento. </param>
+        </member>
+        <member name="M:EnvirAlert.MainPage.actualizaciones_TimerTick(System.Object,System.EventArgs)">
+            <summary>
+            Este método es invocado desde un ojeto DispatcherTimer cada cierto intervalo de tiempo
+            y que Si esta activada la opción de 'Activar Alertas' entonces se consulta al Indice
+            Semántico y se recuperan los dispositivos mas cercanos, son procesados los datos y 
+            si es pertinente se muetra una alarma.
+            </summary>
+            <param name="sender">Objeto enviante.</param>
+            <param name="e">Resultados del evento</param>
+        </member>
+        <member name="M:EnvirAlert.MainPage.ob1_RetornarMapaLugarDatapointsCompleted(System.Object,EnvirAlert.WSIOT.RetornarMapaLugarDatapointsCompletedEventArgs)">
+            <summary>
+            Se recupera los feedXively que corresponden a los parametros de la busqueda indicados
+            posteriormente se analiza la información y si se muestra la alerta de como es
+            la calidad del aire en la proximidad de un radio determinado.
+            </summary>
+            <param name="sender">Objeto enviante</param>
+            <param name="e">Resultados</param>
+        </member>
+        <member name="M:EnvirAlert.MainPage.OnMessageBoxClosed(System.IAsyncResult)">
+            <summary>
+            Método asincrono resultante de presionar una de las opciones de la Alerta mostrada
+            y contiene el resultado de la opción seleccionada, con la cual se podra ver la información
+            detallada de una alerta, o cancelar la alerta.
+            </summary>
+            <param name="ar">Resultado ´de luego de presionar una opción del mensaje de la Alerta</param>
+        </member>
+        <member name="M:EnvirAlert.MainPage.infoSensor(System.String)">
+            <summary>
+            Se redirecciona de la pagina principal hacia la vista 'PagInfoSensores.xaml' pasando
+            como parametro el feedId del cual se irá a mostrarmas información de la calidad
+            del aire.
+            </summary>
+            <param name="feedid">Identificador del dispositivo en XIVELY</param>
+        </member>
+        <member name="M:EnvirAlert.MainPage.iniciarSonido">
+            <summary>
+            Se inicia el sonido de la alerta.
+            </summary>
+        </member>
+        <member name="M:EnvirAlert.MainPage.detenerSonido">
+            <summary>
+            Se detiene la alerta.
+            </summary>
+        </member>
+        <member name="M:EnvirAlert.MainPage.HayConexiónInternet">
+             <summary>   Válida si hay o no hay una conexión  a internet  </summary>
+            
+             <returns>   Verdadero si hay conexión a internet, sino falso </returns>
+        </member>
+        <member name="M:EnvirAlert.MainPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EnvirAlert.Resources.AppResources">
+            <summary>
+              Clase de recurso fuertemente tipado para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:EnvirAlert.Resources.AppResources.ResourceManager">
+            <summary>
+              Devuelve la instancia de ResourceManager almacenada en caché usada por esta clase.
+            </summary>
+        </member>
+        <member name="P:EnvirAlert.Resources.AppResources.Culture">
+            <summary>
+              Invalida la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos usando esta clase de recursos fuertemente tipados.
+            </summary>
+        </member>
+        <member name="P:EnvirAlert.Resources.AppResources.ResourceFlowDirection">
+            <summary>
+              Busca una cadena traducida similar a LeftToRight.
+            </summary>
+        </member>
+        <member name="P:EnvirAlert.Resources.AppResources.ResourceLanguage">
+            <summary>
+              Busca una cadena traducida similar a us-EN.
+            </summary>
+        </member>
+        <member name="P:EnvirAlert.Resources.AppResources.ApplicationTitle">
+            <summary>
+              Busca una cadena traducida similar a MI APLICACIÓN.
+            </summary>
+        </member>
+        <member name="P:EnvirAlert.Resources.AppResources.AppBarButtonText">
+            <summary>
+              Busca una cadena traducida similar a botón
+            </summary>
+        </member>
+        <member name="P:EnvirAlert.Resources.AppResources.AppBarMenuItemText">
+            <summary>
+              Busca una cadena traducida similar a elemento de menú.
+            </summary>
+        </member>
+        <member name="T:EnvirAlert.WSIOT.Location">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Location.name">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Location.domain">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Location.lat">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Location.lon">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Location.ele">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Location.exposure">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Location.disposition">
+            <remarks/>
+        </member>
+        <member name="T:EnvirAlert.WSIOT.Domain">
+            <remarks/>
+        </member>
+        <member name="F:EnvirAlert.WSIOT.Domain.physical">
+            <remarks/>
+        </member>
+        <member name="F:EnvirAlert.WSIOT.Domain.virtual">
+            <remarks/>
+        </member>
+        <member name="T:EnvirAlert.WSIOT.Exposure">
+            <remarks/>
+        </member>
+        <member name="F:EnvirAlert.WSIOT.Exposure.indoor">
+            <remarks/>
+        </member>
+        <member name="F:EnvirAlert.WSIOT.Exposure.outdoor">
+            <remarks/>
+        </member>
+        <member name="T:EnvirAlert.WSIOT.Disposition">
+            <remarks/>
+        </member>
+        <member name="F:EnvirAlert.WSIOT.Disposition.fixed">
+            <remarks/>
+        </member>
+        <member name="F:EnvirAlert.WSIOT.Disposition.mobile">
+            <remarks/>
+        </member>
+        <member name="T:EnvirAlert.WSIOT.Datapoint">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Datapoint.value">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Datapoint.at">
+            <remarks/>
+        </member>
+        <member name="T:EnvirAlert.WSIOT.Unit">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Unit.symbol">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Unit.label">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Unit.unitType">
+            <remarks/>
+        </member>
+        <member name="T:EnvirAlert.WSIOT.IFCClassification">
+            <remarks/>
+        </member>
+        <member name="F:EnvirAlert.WSIOT.IFCClassification.basicSI">
+            <remarks/>
+        </member>
+        <member name="F:EnvirAlert.WSIOT.IFCClassification.derivedSI">
+            <remarks/>
+        </member>
+        <member name="F:EnvirAlert.WSIOT.IFCClassification.conservationBasedUnits">
+            <remarks/>
+        </member>
+        <member name="F:EnvirAlert.WSIOT.IFCClassification.derivedUnits">
+            <remarks/>
+        </member>
+        <member name="F:EnvirAlert.WSIOT.IFCClassification.contextDependentUnits">
+            <remarks/>
+        </member>
+        <member name="T:EnvirAlert.WSIOT.Datastream">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Datastream.feedid">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Datastream.id">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Datastream.current_value">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Datastream.at">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Datastream.max_value">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Datastream.min_value">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Datastream.tags">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Datastream.unit">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Datastream.datapoints">
+            <remarks/>
+        </member>
+        <member name="T:EnvirAlert.WSIOT.Feed">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Feed.id">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Feed.title">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Feed.Private">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Feed.tags">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Feed.description">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Feed.feed">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Feed.auto_feed_url">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Feed.status">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Feed.updated">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Feed.created">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Feed.creator">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Feed.version">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Feed.website">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Feed.datastreams">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Feed.location">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Feed.TitleHTML">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.Feed.URLMostrar">
+            <remarks/>
+        </member>
+        <member name="T:EnvirAlert.WSIOT.Status">
+            <remarks/>
+        </member>
+        <member name="F:EnvirAlert.WSIOT.Status.frozen">
+            <remarks/>
+        </member>
+        <member name="F:EnvirAlert.WSIOT.Status.live">
+            <remarks/>
+        </member>
+        <member name="T:EnvirAlert.WSIOT.GeonameNode">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.GeonameNode.ToponymName">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.GeonameNode.Nombre_lugar">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.GeonameNode.geonameId">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.GeonameNode.Longitud">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.GeonameNode.Latitud">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.GeonameNode.Codigo_pais">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.GeonameNode.Nombre_pais">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.GeonameNode.fcl">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.GeonameNode.fcode">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.GeonameNode.Nombre_lugar_usuario">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.GeonameNode.Nombre_lugar_Jerarquico">
+            <remarks/>
+        </member>
+        <member name="T:EnvirAlert.WSIOT.lugar">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.lugar.nodoGeoname">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.lugar.distancia">
+            <remarks/>
+        </member>
+        <member name="T:EnvirAlert.WSIOT.FeedXively">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.FeedXively.Conceptos">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.FeedXively.lugares">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.FeedXively.feed">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.FeedXively.pathfeed">
+            <remarks/>
+        </member>
+        <member name="P:EnvirAlert.WSIOT.FeedXively.DocumentJSON">
+            <remarks/>
+        </member>
+        <member name="M:EnvirAlert.Views.AcercaDe.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EnvirAlert.Views.Page1">
+            <summary>
+            Vista en la cual se puede añadir un nuevo dispositivo al servicio web
+            del indice semantico, a travéz del mismo servicio.
+            </summary>
+        </member>
+        <member name="F:EnvirAlert.Views.Page1.tSegundosHayInternet">
+            De configuracion
+        </member>
+        <member name="F:EnvirAlert.Views.Page1.mensajeYaSeMostro">
+            Auxiliares
+        </member>
+        <member name="M:EnvirAlert.Views.Page1.#ctor">
+            <summary>
+            Se inicializan Componentes de la vista.
+            </summary>
+        </member>
+        <member name="M:EnvirAlert.Views.Page1.ConexionInternet_TimerTick(System.Object,System.EventArgs)">
+            <summary>   Event handler. Called by ConexionInternet for timer tick events. </summary>
+            <param name="sender">   Objeto enviante. </param>
+            <param name="e">        Informacion del evento. </param>
+        </member>
+        <member name="M:EnvirAlert.Views.Page1.ob_CargarFeedXivelyBDDCompleted(System.Object,EnvirAlert.WSIOT.CargarFeedXivelyBDDCompletedEventArgs)">
+            <summary>
+            Método asincronico invocado desde un llamado del servicio del indice semantico
+            CargarFeedXivelyBDD, en el cual se hace posible la inserción de un nuevo dispositivo
+            existente en XIVELY a este servicio.
+            </summary>
+            <param name="sender">Objeto incador</param>
+            <param name="e">Resultado de la invocación</param>
+        </member>
+        <member name="M:EnvirAlert.Views.Page1.Verificar(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Válida/Corrige el FeedId
+            </summary>
+            <param name="sender">Objeto invocador</param>
+            <param name="e">Respesta del evento</param>
+        </member>
+        <member name="M:EnvirAlert.Views.Page1.btnIndexar_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Evento cuando se presiona para indexar el dispositivo, y se agrega el nuevo dispositivo
+            al indice semántico.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EnvirAlert.Views.Page1.HayConexiónInternet">
+             <summary>   Válida si hay o no hay una conexión  a internet  </summary>
+            
+             <returns>   Verdadero si hay conexión a internet, sino falso </returns>
+        </member>
+        <member name="M:EnvirAlert.Views.Page1.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EnvirAlert.Views.PagInfoSensores">
+            <summary>
+            Clase de la Vista PagInfoSensores en la cual se despliega
+            la información mas detallada de un dispositivo en la posición del dispositivo a travéz
+            del GPS.
+            </summary>
+        </member>
+        <member name="F:EnvirAlert.Views.PagInfoSensores.tSegundosAntes">
+            De configuracion
+        </member>
+        <member name="F:EnvirAlert.Views.PagInfoSensores.tSegundosHayInternet">
+            Tiempo en segundos para intervalos de teiempo que se actualiza la información
+        </member>
+        <member name="F:EnvirAlert.Views.PagInfoSensores.mensajeYaSeMostro">
+            Auxiliares
+        </member>
+        <member name="M:EnvirAlert.Views.PagInfoSensores.#ctor">
+            <summary>
+            Se inicializan Componentes de la vista y a travéz de este
+            se iniciaN actualizaciones cada intervalo de tiempo definido
+            </summary>
+        </member>
+        <member name="M:EnvirAlert.Views.PagInfoSensores.actualizar">
+            <summary>
+            Método encargado de iniciar actualizaciones para el despliegue de 
+            el listado de dispositivos cercanos y niveles de contaminación.
+            </summary>
+        </member>
+        <member name="M:EnvirAlert.Views.PagInfoSensores.ConexionInternet_TimerTick(System.Object,System.EventArgs)">
+            <summary>   Event handler. Called by ConexionInternet for timer tick events. </summary>
+            <param name="sender">   Objeto enviante. </param>
+            <param name="e">        Informacion del evento. </param>
+        </member>
+        <member name="M:EnvirAlert.Views.PagInfoSensores.actualizaciones_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Este método es invocado desde un DispatcherTimer, por el cual es invocado
+            cada ciertos intervalos de tiempos definidos y aqui se invoca al Indice
+            Semantico para recuperar datos de un feedId para recuperar sus datos
+            de su ultima actualización, y actualizar la lista de dispositivos
+            en la vista.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EnvirAlert.Views.PagInfoSensores.wsCliente_RetornarDatosSensorCompleted(System.Object,EnvirAlert.WSIOT.RetornarDatosSensorCompletedEventArgs)">
+            <summary>
+            Este método es el resultado de una consulta al indice semantico en el cual
+            se recuperan los ultimos registros agregados de un dispositivo (feedId),
+            y se actualiza su color y nivel de Contaminación.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EnvirAlert.Views.PagInfoSensores.riesgo(EnvirAlert.WSIOT.FeedXively)">
+            <summary>
+            Se encarga de evaluar el nivel de contaminación de un feedID
+            Y asignar un estilo añ rectangulo principal de para indicar
+            el nivel de contaminación en una zona.
+            </summary>
+            <param name="feed">Información de un dispositivo</param>
+            <returns>Nivel de riesgo: 1 Bajo, 2 Moderado, 3 Riesgoso</returns>
+        </member>
+        <member name="M:EnvirAlert.Views.PagInfoSensores.riesgo(System.String,EnvirAlert.WSIOT.FeedXively)">
+            <summary>
+            Evalua el riesgo de uno de los componentes del dispositivo, y 
+            se pinta de un color, indicando el nivel de riesgo de esa 
+            zona.
+            </summary>
+            <param name="componente">Componente del dispositivo</param>
+            <param name="feed">Información de todo un dispositivo</param>
+            <returns></returns>
+        </member>
+        <member name="M:EnvirAlert.Views.PagInfoSensores.HayConexiónInternet">
+             <summary>   Válida si hay o no hay una conexión  a internet  </summary>
+            
+             <returns>   Verdadero si hay conexión a internet, sino falso </returns>
+        </member>
+        <member name="M:EnvirAlert.Views.PagInfoSensores.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EnvirAlert.Views.PagListaSensores">
+            <summary>
+            Clase de la vista PagLista sensores en la cual se despliega una lista
+            de dispositivos mas cercanos a determinado rango.
+            </summary>
+        </member>
+        <member name="F:EnvirAlert.Views.PagListaSensores.tSegundosAntes">
+            De configuracion
+        </member>
+        <member name="F:EnvirAlert.Views.PagListaSensores.rangoConsulta">
+            Rango para determinar si hay otros dispositivos que puedan generar alertas
+        </member>
+        <member name="F:EnvirAlert.Views.PagListaSensores.paramConsulta">
+            Rango de dispositivos a consultar
+        </member>
+        <member name="F:EnvirAlert.Views.PagListaSensores.tSegundosConsultas">
+            Consulta que se enviara por parametro al servicio web
+        </member>
+        <member name="F:EnvirAlert.Views.PagListaSensores.tSegundosHayInternet">
+            Tiempo en segundos para intervalos de teiempo que se actualiza la información
+        </member>
+        <member name="F:EnvirAlert.Views.PagListaSensores.mensajeYaSeMostro">
+            Auxiliares
+        </member>
+        <member name="M:EnvirAlert.Views.PagListaSensores.#ctor">
+            <summary>
+            Se inicializan los componentes.
+            </summary>
+        </member>
+        <member name="M:EnvirAlert.Views.PagListaSensores.cargarListaSensores">
+            <summary>
+            Método asincrono el cual se encarga de actualizar la lista de sensores desplegados en la pantalla
+            cada cierto intervalo de tiempo en las coordenadas indicadas por el GPS de la posición actual.
+            </summary>
+        </member>
+        <member name="M:EnvirAlert.Views.PagListaSensores.ConexionInternet_TimerTick(System.Object,System.EventArgs)">
+            <summary>   Event handler. Called by ConexionInternet for timer tick events. </summary>
+            <param name="sender">   Objeto enviante. </param>
+            <param name="e">        Informacion del evento. </param>
+        </member>
+        <member name="M:EnvirAlert.Views.PagListaSensores.cargarDatos_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Método invocado desde un dispatcherTimer cada cierto intervalo de tiempo definido.
+            Desde el indice semantico se obtienen los datos de los dispositivos cercanos a un 
+            radio de 1 km
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EnvirAlert.Views.PagListaSensores.c_RetornarMapaLugarDatapointsCompleted(System.Object,EnvirAlert.WSIOT.RetornarMapaLugarDatapointsCompletedEventArgs)">
+            <summary>
+            Contiene los resultados de la consulta hecha al indice semántico, posteriormente se
+            pinta en pantalla los cuadros que indican con colores el nivel de riesgo, y un botón
+            para poder ver en detalle la información del dispositivo.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EnvirAlert.Views.PagListaSensores.pintarCuadrosAlertas">
+            <summary>
+            Se pinta en los rectangulos los colores correspondientes a el nivel de risgo
+            que este representando en una zona por algún dispositivo.
+            </summary>
+        </member>
+        <member name="M:EnvirAlert.Views.PagListaSensores.c_RetornarDatosSensorCompleted(System.Object,EnvirAlert.WSIOT.RetornarDatosSensorCompletedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EnvirAlert.Views.PagListaSensores.b_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Evento que se ejecuta cuando se presiona sobre un botón de los dispositivos 
+            desplegados en la lista de dispositivos y lo redirecciona ala vista PagInfoSensores
+            pasando como parametro el feedId para que posteriormente esa vista redenrerice la
+            información de ese dispositivo.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EnvirAlert.Views.PagListaSensores.riesgo(EnvirAlert.WSIOT.Feed)">
+            <summary>
+            Evalua el riesgo de una zona con la información de un dispositivo.
+            </summary>
+            <param name="feed">Información de un dispositivo</param>
+            <returns>El nivel de riesgo 1 Bajo, 2 Moderado, 3 Riesgoso</returns>
+        </member>
+        <member name="M:EnvirAlert.Views.PagListaSensores.definicionRows(System.Int32)">
+            <summary>
+            Define el numero de filas para poder controlar los elementos añadidos
+            a la lista.
+            </summary>
+            <param name="numeroFilasNecesarias">Equivalen al número de filas que se van a listar</param>
+            <returns>Lista de definicion de columnas 'RowDefinition'</returns>
+        </member>
+        <member name="M:EnvirAlert.Views.PagListaSensores.HayConexiónInternet">
+             <summary>   Válida si hay o no hay una conexión  a internet  </summary>
+            
+             <returns>   Verdadero si hay conexión a internet, sino falso </returns>
+        </member>
+        <member name="M:EnvirAlert.Views.PagListaSensores.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EnvirAlert.Views.PagTipoBusqueda">
+            <summary>
+            Clase de la vista PagTipoBusqueda en la cual es posible de buscar un dispositivo
+            por un FeedId o Lugar
+            </summary>
+        </member>
+        <member name="F:EnvirAlert.Views.PagTipoBusqueda.tSegundosAntes">
+            De configuracion
+        </member>
+        <member name="F:EnvirAlert.Views.PagTipoBusqueda.rangoConsulta">
+            Rango para determinar si hay otros dispositivos que puedan generar alertas
+        </member>
+        <member name="F:EnvirAlert.Views.PagTipoBusqueda.paramConsulta">
+            Rango de dispositivos a consultar
+        </member>
+        <member name="F:EnvirAlert.Views.PagTipoBusqueda.tSegundosConsultas">
+            Consulta que se enviara por parametro al servicio web
+        </member>
+        <member name="F:EnvirAlert.Views.PagTipoBusqueda.tSegundosHayInternet">
+            Tiempo en segundos para intervalos de teiempo que se actualiza la información
+        </member>
+        <member name="F:EnvirAlert.Views.PagTipoBusqueda.mensajeYaSeMostro">
+            Auxiliares
+        </member>
+        <member name="M:EnvirAlert.Views.PagTipoBusqueda.#ctor">
+            <summary>
+            Inicialización de componentes y obtención de datos.
+            </summary>
+        </member>
+        <member name="M:EnvirAlert.Views.PagTipoBusqueda.ConexionInternet_TimerTick(System.Object,System.EventArgs)">
+            <summary>   Event handler. Called by ConexionInternet for timer tick events. </summary>
+            <param name="sender">   Objeto enviante. </param>
+            <param name="e">        Informacion del evento. </param>
+        </member>
+        <member name="M:EnvirAlert.Views.PagTipoBusqueda.ObetenerFeedXively">
+            <summary>
+            Se encarga de obtener los FeedXively en un radio de 1km.
+            </summary>
+        </member>
+        <member name="M:EnvirAlert.Views.PagTipoBusqueda.ob_RetornarMapaLugarDatapointsCompleted(System.Object,EnvirAlert.WSIOT.RetornarMapaLugarDatapointsCompletedEventArgs)">
+            <summary>
+            Contiene los resultados de la consulta al indice semántico y carga las listas para
+            desplegar los dispositivos en la pantalla.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EnvirAlert.Views.PagTipoBusqueda.HayConexiónInternet">
+             <summary>   Válida si hay o no hay una conexión  a internet  </summary>
+            
+             <returns>   Verdadero si hay conexión a internet, sino falso </returns>
+        </member>
+        <member name="M:EnvirAlert.Views.PagTipoBusqueda.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EnvirAlert.Views.PagVistaGeograficaSensores">
+            <summary>
+            Código de vista geográfica de sensores, en donde se muestra un mapa
+            en el cual se ubica a partir de las coordenadas del GPS y se muestran
+            información de los dispositivos mas cercanos y coloreados dependiendo
+            del grado de contaminación del aire cada intervalos de tiempo t.
+            </summary>
+        </member>
+        <member name="F:EnvirAlert.Views.PagVistaGeograficaSensores.miAlerta">
+            Para alertas
+        </member>
+        <member name="F:EnvirAlert.Views.PagVistaGeograficaSensores.la">
+            Coordenadas
+        </member>
+        <member name="F:EnvirAlert.Views.PagVistaGeograficaSensores.datosAislados">
+            Aislar datos
+        </member>
+        <member name="F:EnvirAlert.Views.PagVistaGeograficaSensores.WSa">
+            Servicio Web
+        </member>
+        <member name="F:EnvirAlert.Views.PagVistaGeograficaSensores.tSegundosAntes">
+            De configuracion
+        </member>
+        <member name="F:EnvirAlert.Views.PagVistaGeograficaSensores.rangoConsulta">
+            Rango para determinar si hay otros dispositivos que puedan generar alertas
+        </member>
+        <member name="F:EnvirAlert.Views.PagVistaGeograficaSensores.paramConsulta">
+            Rango de dispositivos a consultar
+        </member>
+        <member name="F:EnvirAlert.Views.PagVistaGeograficaSensores.tSegundosConsultas">
+            Consulta que se enviara por parametro al servicio web
+        </member>
+        <member name="F:EnvirAlert.Views.PagVistaGeograficaSensores.tSegundosHayInternet">
+            Tiempo en segundos para intervalos de teiempo que se actualiza la información
+        </member>
+        <member name="F:EnvirAlert.Views.PagVistaGeograficaSensores.mensajeYaSeMostro">
+            Auxiliares
+        </member>
+        <member name="M:EnvirAlert.Views.PagVistaGeograficaSensores.#ctor">
+            <summary>
+            Se encarga de inicializar los compinentes, e iniciar actualizaciones
+            periodicas para obtener las coordenadas y mostrar las alertas que
+            corresponden durante la ejecución de esta vista.
+            </summary>
+        </member>
+        <member name="M:EnvirAlert.Views.PagVistaGeograficaSensores.miLocalizacion">
+            <summary>
+            Este método se encarga de obtener la posición del GPS del dispositivo
+            a partir del lugar que este este dispositivo.
+            </summary>
+        </member>
+        <member name="M:EnvirAlert.Views.PagVistaGeograficaSensores.ObetenerFeedXively">
+            <summary>
+            Permite la obtención y actualización de los FeedXively, con el proposito
+            de mostrar la alerta, si es que la opción que permite mostrar alertas esta
+            habilitada.
+            </summary>
+        </member>
+        <member name="M:EnvirAlert.Views.PagVistaGeograficaSensores.ConexionInternet_TimerTick(System.Object,System.EventArgs)">
+            <summary>   Event handler. Called by ConexionInternet for timer tick events. </summary>
+            <param name="sender">   Objeto enviante. </param>
+            <param name="e">        Informacion del evento. </param>
+        </member>
+        <member name="M:EnvirAlert.Views.PagVistaGeograficaSensores.actualizaciones_TimerTick(System.Object,System.EventArgs)">
+            <summary>
+            Este método es invocado desde un ojeto DispatcherTimer cada cierto intervalo de tiempo
+            y que Si esta activada la opción de 'Activar Alertas' entonces se consulta al Indice
+            Semántico y se recuperan los dispositivos mas cercanos, son procesados los datos y 
+            si es pertinente se muetra una alarma.
+            </summary>
+            <param name="sender">Objeto enviante.</param>
+            <param name="e">Resultados del evento</param>
+        </member>
+        <member name="M:EnvirAlert.Views.PagVistaGeograficaSensores.ob1_RetornarMapaLugarDatapointsCompleted(System.Object,EnvirAlert.WSIOT.RetornarMapaLugarDatapointsCompletedEventArgs)">
+            <summary>
+            Se recupera los feedXively que corresponden a los parametros de la busqueda indicados
+            posteriormente se analiza la información y si se muestra la alerta de como es
+            la calidad del aire en la proximidad de un radio determinado.
+            </summary>
+            <param name="sender">Objeto enviante</param>
+            <param name="e">Resultados</param>
+        </member>
+        <member name="M:EnvirAlert.Views.PagVistaGeograficaSensores.ob_RetornarMapaLugarDatapointsCompleted(System.Object,EnvirAlert.WSIOT.RetornarMapaLugarDatapointsCompletedEventArgs)">
+            <summary>
+            Método asincrono donde recupera los feedXively que corresponden a los parametros de la busqueda indicados
+            posteriormente se analiza la información y se pinta en el mapa.
+            </summary>
+            <param name="sender">Objeto enviante</param>
+            <param name="e">Resultados</param>
+        </member>
+        <member name="M:EnvirAlert.Views.PagVistaGeograficaSensores.click(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Evento, en el cual se redirecciona a PagInfoSensores con un parametro
+            el cual es el feedID para mostrar el contenido
+            </summary>
+            <param name="sender">Objeto que invoca</param>
+            <param name="e">Resultado de invocación</param>
+        </member>
+        <member name="M:EnvirAlert.Views.PagVistaGeograficaSensores.HayConexiónInternet">
+             <summary>   Válida si hay o no hay una conexión  a internet  </summary>
+            
+             <returns>   Verdadero si hay conexión a internet, sino falso </returns>
+        </member>
+        <member name="M:EnvirAlert.Views.PagVistaGeograficaSensores.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>
